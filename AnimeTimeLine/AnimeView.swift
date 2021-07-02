@@ -18,8 +18,14 @@ struct AnimeView: View {
             } placeholder: {
                 ProgressView()
             }
-            Text(anime.name ?? "").padding()
-        }
+            HStack {
+                Spacer()
+                Text(anime.name ?? "")
+                    .padding()
+                Spacer()
+            }.background(.regularMaterial)
+        }.shadow(radius: 4)
+            .mask(Rectangle())
     }
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var animeProvider = AnimeProvider.shared
     
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)])
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.startDate)])
     private var animes: FetchedResults<Anime>
     
     var body: some View {
