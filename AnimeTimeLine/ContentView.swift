@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    let baseUrlString = "https://bangumi.moe/"
+    let baseUrlString = Bundle.main.localizedString(forKey: "base_url", value: nil, table: "Strings")
     @StateObject var animes = Animes()
     var body: some View {
         List{
             ForEach(animes.items){ anime in
                 AsyncImage(url: URL(string: baseUrlString+anime.cover)){image in
-                    image.resizable()
-                        .scaledToFit()
+                    HStack {
+                        Spacer()
+                        image.resizable()
+                            .scaledToFit()                            
+                        Spacer()
+                    }.frame(height: 200)
                 } placeholder: {
                     ProgressView()
                 }
@@ -24,7 +28,7 @@ struct ContentView: View {
         }.task {
             await animes.loadData()
             animes.items.sort(by: {
-                $0.startDate > $1.startDate
+                $0.startDate < $1.startDate
             })
         }
  
@@ -37,7 +41,8 @@ class Animes: ObservableObject {
     @Published var items: [Anime] = []
     
     fileprivate func loadData() async{
-        guard let url = URL(string: "https://bangumi.moe/api/bangumi/current") else {
+        let urlString = Bundle.main.localizedString(forKey: "current_fetch_url", value: nil, table: "Strings")
+        guard let url = URL(string: urlString) else {
             return
         }
         do{

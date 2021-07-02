@@ -1,0 +1,10 @@
+/* 
+  Strings.strings
+  AnimeTimeLine
+
+  Created by dadachen on 2021/7/2.
+  
+*/
+
+"base_url" = "https://bangumi.moe/";
+"current_fetch_url" = "https://bangumi.moe/api/bangumi/current";

@@ -13,6 +13,7 @@
 		03111220268E04A700BB5A58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0311121F268E04A700BB5A58 /* Preview Assets.xcassets */; };
 		0311122A268E04A800BB5A58 /* AnimeTimeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */; };
 		03111234268E04A800BB5A58 /* AnimeTimeLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */; };
+		48D7B6C7268F04C700497BD3 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48D7B6C6268F04C700497BD3 /* Strings.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineTests.swift; sourceTree = "<group>"; };
 		0311122F268E04A800BB5A58 /* AnimeTimeLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeTimeLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineUITests.swift; sourceTree = "<group>"; };
+		48D7B6C6268F04C700497BD3 /* Strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		0311120C268E04A600BB5A58 = {
 			isa = PBXGroup;
 			children = (
+				48D7B6C6268F04C700497BD3 /* Strings.strings */,
 				03111217268E04A600BB5A58 /* AnimeTimeLine */,
 				03111228268E04A800BB5A58 /* AnimeTimeLineTests */,
 				03111232268E04A800BB5A58 /* AnimeTimeLineUITests */,
@@ -230,6 +233,7 @@
 			files = (
 				03111220268E04A700BB5A58 /* Preview Assets.xcassets in Resources */,
 				0311121D268E04A700BB5A58 /* Assets.xcassets in Resources */,
+				48D7B6C7268F04C700497BD3 /* Strings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeTimeLine/Preview Content\"";
-				DEVELOPMENT_TEAM = KZ4FYT4Z48;
+				DEVELOPMENT_TEAM = K25G4QHLBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,7 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeTimeLine/Preview Content\"";
-				DEVELOPMENT_TEAM = KZ4FYT4Z48;
+				DEVELOPMENT_TEAM = K25G4QHLBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
