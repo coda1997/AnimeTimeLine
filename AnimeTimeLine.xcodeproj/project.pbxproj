@@ -13,6 +13,10 @@
 		03111220268E04A700BB5A58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0311121F268E04A700BB5A58 /* Preview Assets.xcassets */; };
 		0311122A268E04A800BB5A58 /* AnimeTimeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */; };
 		03111234268E04A800BB5A58 /* AnimeTimeLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */; };
+		03E7FA5D268F51B200AC5D5E /* AnimeDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA5B268F51B200AC5D5E /* AnimeDB.xcdatamodeld */; };
+		03E7FA5F268F525F00AC5D5E /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA5E268F525F00AC5D5E /* Anime.swift */; };
+		03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */; };
+		03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA62268F6EED00AC5D5E /* AnimeView.swift */; };
 		48D7B6C7268F04C700497BD3 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48D7B6C6268F04C700497BD3 /* Strings.strings */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,10 @@
 		03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineTests.swift; sourceTree = "<group>"; };
 		0311122F268E04A800BB5A58 /* AnimeTimeLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeTimeLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineUITests.swift; sourceTree = "<group>"; };
+		03E7FA5C268F51B200AC5D5E /* AnimeDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimeDB.xcdatamodel; sourceTree = "<group>"; };
+		03E7FA5E268F525F00AC5D5E /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeProvider.swift; sourceTree = "<group>"; };
+		03E7FA62268F6EED00AC5D5E /* AnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeView.swift; sourceTree = "<group>"; };
 		48D7B6C6268F04C700497BD3 /* Strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,10 +103,14 @@
 		03111217268E04A600BB5A58 /* AnimeTimeLine */ = {
 			isa = PBXGroup;
 			children = (
+				03E7FA62268F6EED00AC5D5E /* AnimeView.swift */,
 				03111218268E04A600BB5A58 /* AnimeTimeLineApp.swift */,
 				0311121A268E04A600BB5A58 /* ContentView.swift */,
 				0311121C268E04A700BB5A58 /* Assets.xcassets */,
 				0311121E268E04A700BB5A58 /* Preview Content */,
+				03E7FA5B268F51B200AC5D5E /* AnimeDB.xcdatamodeld */,
+				03E7FA5E268F525F00AC5D5E /* Anime.swift */,
+				03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */,
 			);
 			path = AnimeTimeLine;
 			sourceTree = "<group>";
@@ -258,7 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E7FA5F268F525F00AC5D5E /* Anime.swift in Sources */,
 				0311121B268E04A600BB5A58 /* ContentView.swift in Sources */,
+				03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */,
+				03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */,
+				03E7FA5D268F51B200AC5D5E /* AnimeDB.xcdatamodeld in Sources */,
 				03111219268E04A600BB5A58 /* AnimeTimeLineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,10 +432,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeTimeLine/Preview Content\"";
-				DEVELOPMENT_TEAM = K25G4QHLBL;
+				DEVELOPMENT_TEAM = KZ4FYT4Z48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -435,6 +452,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dadachen.AnimeTimeLine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,10 +464,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeTimeLine/Preview Content\"";
-				DEVELOPMENT_TEAM = K25G4QHLBL;
+				DEVELOPMENT_TEAM = KZ4FYT4Z48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -465,6 +484,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dadachen.AnimeTimeLine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -607,6 +627,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03E7FA5B268F51B200AC5D5E /* AnimeDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03E7FA5C268F51B200AC5D5E /* AnimeDB.xcdatamodel */,
+			);
+			currentVersion = 03E7FA5C268F51B200AC5D5E /* AnimeDB.xcdatamodel */;
+			path = AnimeDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0311120D268E04A600BB5A58 /* Project object */;
 }

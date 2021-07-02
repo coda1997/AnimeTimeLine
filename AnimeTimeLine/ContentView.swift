@@ -8,67 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    let baseUrlString = Bundle.main.localizedString(forKey: "base_url", value: nil, table: "Strings")
-    @StateObject var animes = Animes()
+    var animeProvider = AnimeProvider.shared
+    
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)])
+    private var animes: FetchedResults<Anime>
+    
     var body: some View {
         List{
-            ForEach(animes.items){ anime in
-                AsyncImage(url: URL(string: baseUrlString+anime.cover)){image in
-                    HStack {
-                        Spacer()
-                        image.resizable()
-                            .scaledToFit()                            
-                        Spacer()
-                    }.frame(height: 200)
-                } placeholder: {
-                    ProgressView()
-                }
+            Text("\(animes.count)").padding()
+            ForEach(animes){ anime in
+                AnimeView(anime: anime)
+            }
+        }.task {
+            if animes.isEmpty {
+                await animeProvider.fetchAnimes()
             }
             
-        }.task {
-            await animes.loadData()
-            animes.items.sort(by: {
-                $0.startDate < $1.startDate
-            })
-        }
- 
-    }
-    
-
-}
-
-class Animes: ObservableObject {
-    @Published var items: [Anime] = []
-    
-    fileprivate func loadData() async{
-        let urlString = Bundle.main.localizedString(forKey: "current_fetch_url", value: nil, table: "Strings")
-        guard let url = URL(string: urlString) else {
-            return
-        }
-        do{
-            let (data, _) = try await URLSession.shared.data(from: url)
-            let animes = try JSONDecoder().decode([Anime].self, from: data)
-            items = animes
-        }
-        catch{
-            return
         }
     }
 }
-
-struct Anime: Codable {
-    var id: String{
-        _id
-    }
-    var _id: String
-    var name: String
-    var credit: String
-    var startDate: Int
-    var endDate: Int
-    var icon: String
-    var cover: String
-}
-extension Anime: Identifiable{}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

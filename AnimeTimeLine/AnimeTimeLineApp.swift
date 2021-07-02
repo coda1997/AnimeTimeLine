@@ -12,6 +12,7 @@ struct AnimeTimeLineApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, AnimeProvider.shared.container.viewContext)
         }
     }
 }
