@@ -12,10 +12,17 @@ struct AnimeDetailView: View {
     var anime: Anime
     let baseUrlString: String
     var body: some View {
-        WebImage(url: URL(string: baseUrlString+anime.cover!))
-            .resizable()
-            .scaledToFit()
-        Text(anime.name ?? "")
+        List{
+            Section("Cover"){
+                AnimatedImage(url: URL(string: baseUrlString+anime.cover!))
+                    .resizable()
+                    .scaledToFit()
+            }
+            Section("Details"){
+                Text(anime.name ?? "")
+            }
+        }.listStyle(.plain)
+        
     }
 }
 
