@@ -13,6 +13,9 @@
 		03111220268E04A700BB5A58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0311121F268E04A700BB5A58 /* Preview Assets.xcassets */; };
 		0311122A268E04A800BB5A58 /* AnimeTimeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */; };
 		03111234268E04A800BB5A58 /* AnimeTimeLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */; };
+		0380DF69268FE80B00F0A79C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0380DF68268FE80B00F0A79C /* SDWebImageSwiftUI */; };
+		0380DF6B268FE89A00F0A79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF6A268FE89A00F0A79C /* AppDelegate.swift */; };
+		0380DF6D268FEF0100F0A79C /* AnimeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF6C268FEF0100F0A79C /* AnimeDetailView.swift */; };
 		03E7FA5D268F51B200AC5D5E /* AnimeDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA5B268F51B200AC5D5E /* AnimeDB.xcdatamodeld */; };
 		03E7FA5F268F525F00AC5D5E /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA5E268F525F00AC5D5E /* Anime.swift */; };
 		03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */; };
@@ -47,6 +50,8 @@
 		03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineTests.swift; sourceTree = "<group>"; };
 		0311122F268E04A800BB5A58 /* AnimeTimeLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeTimeLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineUITests.swift; sourceTree = "<group>"; };
+		0380DF6A268FE89A00F0A79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0380DF6C268FEF0100F0A79C /* AnimeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailView.swift; sourceTree = "<group>"; };
 		03E7FA5C268F51B200AC5D5E /* AnimeDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimeDB.xcdatamodel; sourceTree = "<group>"; };
 		03E7FA5E268F525F00AC5D5E /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeProvider.swift; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0380DF69268FE80B00F0A79C /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +88,7 @@
 		0311120C268E04A600BB5A58 = {
 			isa = PBXGroup;
 			children = (
+				0380DF6A268FE89A00F0A79C /* AppDelegate.swift */,
 				48D7B6C6268F04C700497BD3 /* Strings.strings */,
 				03111217268E04A600BB5A58 /* AnimeTimeLine */,
 				03111228268E04A800BB5A58 /* AnimeTimeLineTests */,
@@ -111,6 +118,7 @@
 				03E7FA5B268F51B200AC5D5E /* AnimeDB.xcdatamodeld */,
 				03E7FA5E268F525F00AC5D5E /* Anime.swift */,
 				03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */,
+				0380DF6C268FEF0100F0A79C /* AnimeDetailView.swift */,
 			);
 			path = AnimeTimeLine;
 			sourceTree = "<group>";
@@ -155,6 +163,9 @@
 			dependencies = (
 			);
 			name = AnimeTimeLine;
+			packageProductDependencies = (
+				0380DF68268FE80B00F0A79C /* SDWebImageSwiftUI */,
+			);
 			productName = AnimeTimeLine;
 			productReference = 03111215268E04A600BB5A58 /* AnimeTimeLine.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 0311120C268E04A600BB5A58;
+			packageReferences = (
+				0380DF67268FE80B00F0A79C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 03111216268E04A600BB5A58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0380DF6D268FEF0100F0A79C /* AnimeDetailView.swift in Sources */,
 				03E7FA5F268F525F00AC5D5E /* Anime.swift in Sources */,
 				0311121B268E04A600BB5A58 /* ContentView.swift in Sources */,
 				03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */,
 				03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */,
+				0380DF6B268FE89A00F0A79C /* AppDelegate.swift in Sources */,
 				03E7FA5D268F51B200AC5D5E /* AnimeDB.xcdatamodeld in Sources */,
 				03111219268E04A600BB5A58 /* AnimeTimeLineApp.swift in Sources */,
 			);
@@ -627,6 +643,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0380DF67268FE80B00F0A79C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0380DF68268FE80B00F0A79C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0380DF67268FE80B00F0A79C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		03E7FA5B268F51B200AC5D5E /* AnimeDB.xcdatamodeld */ = {

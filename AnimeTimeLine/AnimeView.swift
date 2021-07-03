@@ -6,31 +6,32 @@
 //
 
 import SwiftUI
+import SDWebImage
+import SDWebImageSwiftUI
 
 struct AnimeView: View {
     var anime : Anime
-    let baseUrlString = Bundle.main.localizedString(forKey: "base_url", value: nil, table: "Strings")
+    let baseUrlString : String
     var body: some View {
-        ZStack(alignment: .bottom){
-            AsyncImage(url: URL(string: baseUrlString+anime.cover!)){ image in
-                image.resizable()
-                    .scaledToFit()
-            } placeholder: {
-                ProgressView()
-            }
+        VStack(alignment: .leading){
+            
+            WebImage(url: URL(string: baseUrlString+anime.icon!))
+                .resizable()
+                .scaledToFit()
+                .cornerRadius(4)
             HStack {
                 Spacer()
                 Text(anime.name ?? "")
-                    .padding()
+                    
                 Spacer()
-            }.background(.regularMaterial)
+            }
         }.shadow(radius: 4)
-            .mask(Rectangle())
+            
     }
 }
 
 struct AnimeView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimeView(anime: Anime())
+        AnimeView(anime: Anime(), baseUrlString: "")
     }
 }

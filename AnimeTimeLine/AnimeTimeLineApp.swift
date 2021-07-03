@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import UIKit
 
 @main
 struct AnimeTimeLineApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self)
+    var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()
