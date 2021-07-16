@@ -30,7 +30,7 @@ struct ContentView: View {
                     }
                 }.padding()
             }.task {
-                if animes.isEmpty {
+                if animes.isEmpty || animes[0].startDate > Int64.max {
                     await animeProvider.fetchAnimes()
                 }
             }.navigationTitle(Text("Animes"))
