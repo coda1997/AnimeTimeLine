@@ -15,7 +15,7 @@ struct AnimeTimeLineApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeTab()
                 .environment(\.managedObjectContext, AnimeProvider.shared.container.viewContext)
         }
     }
