@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import EPUBKit
 
 struct MangaView: View {
     var manga:Manga
+    var title:String = manga.getEpub()?.title ?? "no found title"
     var body: some View {
         VStack{
             Spacer()
             manga.image.resizable()
                 .scaledToFit()
-            Text(manga.title).lineLimit(1)
+            Text(title).lineLimit(1)
         }.frame(height: 250, alignment: .bottom)
+    }
+}
+
+extension Manga{
+    func getEpub()->EPUBDocument? {
+        guard let path = Bundle.main.url(forResource: "搾精病棟～性格最悪のナースしかいない病院で射精管理生活～", withExtension: "epub"),
+              let document = EPUBDocument(url: path)
+        else{
+            return nil
+        }
+        return document
     }
 }
 
