@@ -24,6 +24,7 @@
 		03E7FA5F268F525F00AC5D5E /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA5E268F525F00AC5D5E /* Anime.swift */; };
 		03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */; };
 		03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA62268F6EED00AC5D5E /* AnimeView.swift */; };
+		48355BA926A65CE100524DFB /* EPUBKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48355BA826A65CE100524DFB /* EPUBKit */; };
 		48D7B6C7268F04C700497BD3 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48D7B6C6268F04C700497BD3 /* Strings.strings */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0380DF69268FE80B00F0A79C /* SDWebImageSwiftUI in Frameworks */,
+				48355BA926A65CE100524DFB /* EPUBKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +195,7 @@
 			name = AnimeTimeLine;
 			packageProductDependencies = (
 				0380DF68268FE80B00F0A79C /* SDWebImageSwiftUI */,
+				48355BA826A65CE100524DFB /* EPUBKit */,
 			);
 			productName = AnimeTimeLine;
 			productReference = 03111215268E04A600BB5A58 /* AnimeTimeLine.app */;
@@ -268,6 +271,7 @@
 			mainGroup = 0311120C268E04A600BB5A58;
 			packageReferences = (
 				0380DF67268FE80B00F0A79C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				48355BA726A65CE100524DFB /* XCRemoteSwiftPackageReference "EPUBKit" */,
 			);
 			productRefGroup = 03111216268E04A600BB5A58 /* Products */;
 			projectDirPath = "";
@@ -685,6 +689,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		48355BA726A65CE100524DFB /* XCRemoteSwiftPackageReference "EPUBKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/witekbobrowski/EPUBKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -692,6 +704,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0380DF67268FE80B00F0A79C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		48355BA826A65CE100524DFB /* EPUBKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48355BA726A65CE100524DFB /* XCRemoteSwiftPackageReference "EPUBKit" */;
+			productName = EPUBKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 
