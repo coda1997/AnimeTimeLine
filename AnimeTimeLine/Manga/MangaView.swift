@@ -10,8 +10,14 @@ import EPUBKit
 
 struct MangaView: View {
     var manga:Manga
-    var title:String = manga.getEpub()?.title ?? "no found title"
+    let title:String
+    init(manga:Manga){
+        self.manga = manga
+        self.title = manga.getEpub()?.title ?? "no found title"
+
+    }
     var body: some View {
+
         VStack{
             Spacer()
             manga.image.resizable()
@@ -23,9 +29,12 @@ struct MangaView: View {
 
 extension Manga{
     func getEpub()->EPUBDocument? {
-        guard let path = Bundle.main.url(forResource: "搾精病棟～性格最悪のナースしかいない病院で射精管理生活～", withExtension: "epub"),
-              let document = EPUBDocument(url: path)
-        else{
+        guard let path = Bundle.main.url(forResource: "t2", withExtension: "epub") else {
+            print("[epub] not found")
+            return nil
+        }
+        guard let document = EPUBDocument(url: path) else {
+            print("[epub] not load epub file")
             return nil
         }
         return document
