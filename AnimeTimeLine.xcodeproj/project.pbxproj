@@ -13,9 +13,9 @@
 		03111220268E04A700BB5A58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0311121F268E04A700BB5A58 /* Preview Assets.xcassets */; };
 		0311122A268E04A800BB5A58 /* AnimeTimeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */; };
 		03111234268E04A800BB5A58 /* AnimeTimeLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */; };
-		0380DF69268FE80B00F0A79C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0380DF68268FE80B00F0A79C /* SDWebImageSwiftUI */; };
 		0380DF6B268FE89A00F0A79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF6A268FE89A00F0A79C /* AppDelegate.swift */; };
 		0380DF6D268FEF0100F0A79C /* AnimeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF6C268FEF0100F0A79C /* AnimeDetailView.swift */; };
+		03B9E89826BECD9500445DAB /* MangaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9E89726BECD9500445DAB /* MangaProvider.swift */; };
 		03C3DAD626A6F3E800E11CC6 /* t2.epub in Resources */ = {isa = PBXBuildFile; fileRef = 03C3DAD526A6F3E800E11CC6 /* t2.epub */; };
 		03DFA44726A4691300EB3660 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA44626A4691300EB3660 /* HomeTab.swift */; };
 		03DFA44926A46A2400EB3660 /* MangaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA44826A46A2400EB3660 /* MangaContentView.swift */; };
@@ -25,8 +25,10 @@
 		03E7FA5F268F525F00AC5D5E /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA5E268F525F00AC5D5E /* Anime.swift */; };
 		03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */; };
 		03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA62268F6EED00AC5D5E /* AnimeView.swift */; };
-		48355BA926A65CE100524DFB /* EPUBKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48355BA826A65CE100524DFB /* EPUBKit */; };
+		0D309CF93439BA29758CA5A5 /* Pods_AnimeTimeLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F86925A11F3F9C1092485F /* Pods_AnimeTimeLine.framework */; };
+		377D90ADA7E8391C05ACCFED /* Pods_AnimeTimeLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6FAF573C107720CDB73201 /* Pods_AnimeTimeLineTests.framework */; };
 		48D7B6C7268F04C700497BD3 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48D7B6C6268F04C700497BD3 /* Strings.strings */; };
+		DAA7DC09699ED023BB6C7366 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3502CAE9B66D3FC09576CEC6 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineUITests.swift; sourceTree = "<group>"; };
 		0380DF6A268FE89A00F0A79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0380DF6C268FEF0100F0A79C /* AnimeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailView.swift; sourceTree = "<group>"; };
+		03B9E89726BECD9500445DAB /* MangaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaProvider.swift; sourceTree = "<group>"; };
 		03C3DAD526A6F3E800E11CC6 /* t2.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = t2.epub; sourceTree = "<group>"; };
 		03DFA44626A4691300EB3660 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		03DFA44826A46A2400EB3660 /* MangaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaContentView.swift; sourceTree = "<group>"; };
@@ -67,7 +70,16 @@
 		03E7FA5E268F525F00AC5D5E /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		03E7FA60268F54B000AC5D5E /* AnimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeProvider.swift; sourceTree = "<group>"; };
 		03E7FA62268F6EED00AC5D5E /* AnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeView.swift; sourceTree = "<group>"; };
+		227524D622257057FC510B3E /* Pods-AnimeTimeLine-AnimeTimeLineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLine-AnimeTimeLineUITests.release.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLine-AnimeTimeLineUITests/Pods-AnimeTimeLine-AnimeTimeLineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		23287521ADE0B770DD7E96E9 /* Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLine-AnimeTimeLineUITests/Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E751293743E4F01A99894AA /* Pods-AnimeTimeLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLine.debug.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine.debug.xcconfig"; sourceTree = "<group>"; };
+		3502CAE9B66D3FC09576CEC6 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeTimeLine_AnimeTimeLineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D7B6C6268F04C700497BD3 /* Strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
+		765475703F2B1C403A4674B5 /* Pods-AnimeTimeLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLine.release.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine.release.xcconfig"; sourceTree = "<group>"; };
+		BA4DB758792E74B743CBA002 /* Pods-AnimeTimeLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLineTests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLineTests/Pods-AnimeTimeLineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8F86925A11F3F9C1092485F /* Pods_AnimeTimeLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeTimeLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C2099E447BD30B84330EE9 /* Pods-AnimeTimeLineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLineTests.release.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLineTests/Pods-AnimeTimeLineTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD6FAF573C107720CDB73201 /* Pods_AnimeTimeLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeTimeLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0380DF69268FE80B00F0A79C /* SDWebImageSwiftUI in Frameworks */,
-				48355BA926A65CE100524DFB /* EPUBKit in Frameworks */,
+				0D309CF93439BA29758CA5A5 /* Pods_AnimeTimeLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377D90ADA7E8391C05ACCFED /* Pods_AnimeTimeLineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA7DC09699ED023BB6C7366 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +119,8 @@
 				03111228268E04A800BB5A58 /* AnimeTimeLineTests */,
 				03111232268E04A800BB5A58 /* AnimeTimeLineUITests */,
 				03111216268E04A600BB5A58 /* Products */,
+				B1BF169E1B2A462D86B2A5DF /* Pods */,
+				A4F009B9BD7EF3CAD0AA5D97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,8 +191,32 @@
 				03DFA44826A46A2400EB3660 /* MangaContentView.swift */,
 				03DFA44C26A46D5600EB3660 /* Manga.swift */,
 				03DFA44E26A46EC100EB3660 /* MangaView.swift */,
+				03B9E89726BECD9500445DAB /* MangaProvider.swift */,
 			);
 			path = Manga;
+			sourceTree = "<group>";
+		};
+		A4F009B9BD7EF3CAD0AA5D97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8F86925A11F3F9C1092485F /* Pods_AnimeTimeLine.framework */,
+				3502CAE9B66D3FC09576CEC6 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework */,
+				FD6FAF573C107720CDB73201 /* Pods_AnimeTimeLineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1BF169E1B2A462D86B2A5DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E751293743E4F01A99894AA /* Pods-AnimeTimeLine.debug.xcconfig */,
+				765475703F2B1C403A4674B5 /* Pods-AnimeTimeLine.release.xcconfig */,
+				23287521ADE0B770DD7E96E9 /* Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig */,
+				227524D622257057FC510B3E /* Pods-AnimeTimeLine-AnimeTimeLineUITests.release.xcconfig */,
+				BA4DB758792E74B743CBA002 /* Pods-AnimeTimeLineTests.debug.xcconfig */,
+				F8C2099E447BD30B84330EE9 /* Pods-AnimeTimeLineTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03111237268E04A800BB5A58 /* Build configuration list for PBXNativeTarget "AnimeTimeLine" */;
 			buildPhases = (
+				8C189E519D9CFE2D41A08326 /* [CP] Check Pods Manifest.lock */,
 				03111211268E04A600BB5A58 /* Sources */,
 				03111212268E04A600BB5A58 /* Frameworks */,
 				03111213268E04A600BB5A58 /* Resources */,
+				99E98B95C7422278820AE916 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,8 +238,6 @@
 			);
 			name = AnimeTimeLine;
 			packageProductDependencies = (
-				0380DF68268FE80B00F0A79C /* SDWebImageSwiftUI */,
-				48355BA826A65CE100524DFB /* EPUBKit */,
 			);
 			productName = AnimeTimeLine;
 			productReference = 03111215268E04A600BB5A58 /* AnimeTimeLine.app */;
@@ -208,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0311123A268E04A800BB5A58 /* Build configuration list for PBXNativeTarget "AnimeTimeLineTests" */;
 			buildPhases = (
+				2F25ADD63C4553A2717B9190 /* [CP] Check Pods Manifest.lock */,
 				03111221268E04A800BB5A58 /* Sources */,
 				03111222268E04A800BB5A58 /* Frameworks */,
 				03111223268E04A800BB5A58 /* Resources */,
@@ -226,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0311123D268E04A800BB5A58 /* Build configuration list for PBXNativeTarget "AnimeTimeLineUITests" */;
 			buildPhases = (
+				08F01DE6E1F7DA3D6C743FCD /* [CP] Check Pods Manifest.lock */,
 				0311122B268E04A800BB5A58 /* Sources */,
 				0311122C268E04A800BB5A58 /* Frameworks */,
 				0311122D268E04A800BB5A58 /* Resources */,
+				9E8C98A12A266BE54051ADBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,7 +316,6 @@
 			mainGroup = 0311120C268E04A600BB5A58;
 			packageReferences = (
 				0380DF67268FE80B00F0A79C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				48355BA726A65CE100524DFB /* XCRemoteSwiftPackageReference "EPUBKit" */,
 			);
 			productRefGroup = 03111216268E04A600BB5A58 /* Products */;
 			projectDirPath = "";
@@ -315,6 +356,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08F01DE6E1F7DA3D6C743FCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeTimeLine-AnimeTimeLineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F25ADD63C4553A2717B9190 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeTimeLineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C189E519D9CFE2D41A08326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeTimeLine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E98B95C7422278820AE916 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8C98A12A266BE54051ADBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine-AnimeTimeLineUITests/Pods-AnimeTimeLine-AnimeTimeLineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine-AnimeTimeLineUITests/Pods-AnimeTimeLine-AnimeTimeLineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine-AnimeTimeLineUITests/Pods-AnimeTimeLine-AnimeTimeLineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03111211268E04A600BB5A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -326,6 +470,7 @@
 				03DFA44D26A46D5600EB3660 /* Manga.swift in Sources */,
 				0311121B268E04A600BB5A58 /* ContentView.swift in Sources */,
 				03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */,
+				03B9E89826BECD9500445DAB /* MangaProvider.swift in Sources */,
 				03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */,
 				0380DF6B268FE89A00F0A79C /* AppDelegate.swift in Sources */,
 				03DFA44726A4691300EB3660 /* HomeTab.swift in Sources */,
@@ -485,6 +630,7 @@
 		};
 		03111238268E04A800BB5A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E751293743E4F01A99894AA /* Pods-AnimeTimeLine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +663,7 @@
 		};
 		03111239268E04A800BB5A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765475703F2B1C403A4674B5 /* Pods-AnimeTimeLine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -549,6 +696,7 @@
 		};
 		0311123B268E04A800BB5A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4DB758792E74B743CBA002 /* Pods-AnimeTimeLineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +722,7 @@
 		};
 		0311123C268E04A800BB5A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C2099E447BD30B84330EE9 /* Pods-AnimeTimeLineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -599,6 +748,7 @@
 		};
 		0311123E268E04A800BB5A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23287521ADE0B770DD7E96E9 /* Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -622,6 +772,7 @@
 		};
 		0311123F268E04A800BB5A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 227524D622257057FC510B3E /* Pods-AnimeTimeLine-AnimeTimeLineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -693,28 +844,7 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		48355BA726A65CE100524DFB /* XCRemoteSwiftPackageReference "EPUBKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/witekbobrowski/EPUBKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0380DF68268FE80B00F0A79C /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0380DF67268FE80B00F0A79C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-		48355BA826A65CE100524DFB /* EPUBKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 48355BA726A65CE100524DFB /* XCRemoteSwiftPackageReference "EPUBKit" */;
-			productName = EPUBKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		03E7FA5B268F51B200AC5D5E /* AnimeDB.xcdatamodeld */ = {

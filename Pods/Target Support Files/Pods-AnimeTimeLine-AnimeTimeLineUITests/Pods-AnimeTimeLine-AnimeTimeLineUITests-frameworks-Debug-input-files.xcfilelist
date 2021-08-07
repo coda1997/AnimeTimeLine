@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine-AnimeTimeLineUITests/Pods-AnimeTimeLine-AnimeTimeLineUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Bookbinder/Bookbinder.framework
+${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
+${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework

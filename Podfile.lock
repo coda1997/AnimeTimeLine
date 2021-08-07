@@ -1,0 +1,34 @@
+PODS:
+  - Bookbinder (1.0.3):
+    - Kanna (~> 5.0.0)
+    - ZIPFoundation (~> 0.9)
+  - Kanna (5.0.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SDWebImageSwiftUI (2.0.2):
+    - SDWebImage (~> 5.10)
+  - ZIPFoundation (0.9.12)
+
+DEPENDENCIES:
+  - Bookbinder (~> 1.0.0)
+  - SDWebImageSwiftUI
+
+SPEC REPOS:
+  trunk:
+    - Bookbinder
+    - Kanna
+    - SDWebImage
+    - SDWebImageSwiftUI
+    - ZIPFoundation
+
+SPEC CHECKSUMS:
+  Bookbinder: 00fe5ffac9a8d2de97ba2c29267200ac806e4151
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
+  ZIPFoundation: e27423c004a5a1410c15933407747374e7c6cb6e
+
+PODFILE CHECKSUM: 82786ee4fab65105effff2c93ea9facb05a2bc9d
+
+COCOAPODS: 1.10.2
