@@ -14,7 +14,13 @@ struct Manga: Identifiable{
     var title:String
     var imagePath:String
     var image:Image{
-        Image(imagePath)
-        
+        do{
+            let data = try Data(contentsOf: URL(fileURLWithPath: imagePath))
+            return Image(uiImage: UIImage.init(data: data)!)
+        }catch{
+            
+        }
+        return Image(imagePath)
+
     }
 }

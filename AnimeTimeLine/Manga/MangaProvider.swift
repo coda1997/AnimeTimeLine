@@ -7,6 +7,7 @@
 
 import Foundation
 import Bookbinder
+import SwiftUI
 
 class MangaProvider{
     private init(){
@@ -23,12 +24,16 @@ class MangaProvider{
         guard let ebook = bookBinder.bindBook(at: path) else {
             return nil
         }
+        self.ebook = ebook
+        let epub = paserEpubFileToManga(ebook: ebook)
         
-        
-        return paserEpubFileToManga(ebook: ebook)
+        return epub
         
     }
-    
+    public func getCoverPath()-> URL?{
+        return ebook?.coverImageURLs[0] ?? nil
+    }
+    private var ebook:EPUBBook? = nil
     private func paserEpubFileToManga(ebook:EPUBBook)->Manga{
         let imagePath = ebook.coverImageURLs[0]
         let title = ebook.opf.metadata.titles[0]

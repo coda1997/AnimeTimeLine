@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MangaContentView: View {
     var columns: [GridItem] = Array(repeating: .init(), count: 2)
-    var mangas: [Manga] = [Manga(id: UUID(), title: "搾精病棟～性格最悪のナースしかいない病院で射精管理生活～", imagePath: "test1"),
+    let dummyManga = MangaProvider.shared.getDemoEpub() ?? Manga(id: UUID(), title: "搾精病棟～性格最悪のナースしかいない病院で射精管理生活～", imagePath: "test1")
+    var mangas: [Manga] = [Manga(id: UUID(), title: "搾精病棟～性格最悪のナースしかいない病院で射精管理生活～",imagePath: "test1"),
                            Manga(id: UUID(), title: "壁尻の刑", imagePath: "test2"),
                            Manga(id: UUID(), title: "壁尻の刑", imagePath: "test2"),
                            Manga(id: UUID(), title: "搾精病棟～性格最悪のナースしかいない病院で射精管理生活～", imagePath: "test1"),
@@ -21,10 +22,11 @@ struct MangaContentView: View {
         NavigationView{
             ScrollView{
                 LazyVGrid(columns: columns){
-                    ForEach(mangas){item in
-                        MangaView(manga: item)
-                    }
-
+//                    ForEach(mangas){item in
+//                        MangaView(manga: item)
+//                    }
+                    
+                    MangaView(manga: dummyManga)
                 }.navigationTitle("Manga")
                     .padding()
             }
