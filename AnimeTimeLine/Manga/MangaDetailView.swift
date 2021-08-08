@@ -23,8 +23,8 @@ struct MangaDetailView: View {
         List{
             Section("Cover"){
                 WebImage(url: URL(string: coverPath))
-                            .resizable()
-                            .scaledToFit()
+                    .resizable()
+                    .scaledToFit()
             }
             Section("Title"){
                 Text(manga.title ?? "not found")
@@ -35,7 +35,7 @@ struct MangaDetailView: View {
             Section("Type"){
                 Text(manga.type ?? "漫画")
             }
-        }
+        }.listStyle(.plain)
         
         
     }
