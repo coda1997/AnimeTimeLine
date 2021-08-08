@@ -7,7 +7,6 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
-import ImageViewer_swift
 
 struct MangaDetailView: View {
     var manga: MangaEntity
@@ -38,12 +37,17 @@ struct MangaDetailView: View {
 //                                    progress = p
 //                                    title = name
 //                                })
-                                let iv = UIImageView()
-                                iv.setupImageViewer(url: URL(string: coverPath)!)
                             
 //                            }
                             isTapped = true
-                        }
+                        }.sheet(isPresented: $isTapped, onDismiss: {
+                            isTapped = false
+                        }, content: {
+                            WebImage(url: URL(string: coverPath))
+                                .resizable()
+                                .scaledToFit()
+                                
+                        })
                         
 //                    if isTapped {
 //                        EpubView(progressValue: $progress, startReading: $read)
