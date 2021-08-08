@@ -15,8 +15,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             
         // Add multiple caches
         let cache = SDImageCache(namespace: "tiny")
-        cache.config.maxMemoryCost = 100 * 1024 * 1024 // 100MB memory
-        cache.config.maxDiskSize = 100 * 1024 * 1024 // 50MB disk
+        cache.config.maxMemoryCost = 200 * 1024 * 1024 // 100MB memory
+        cache.config.maxDiskSize = 2000 * 1024 * 1024 // 50MB disk
         SDImageCachesManager.shared.addCache(cache)
         SDWebImageManager.defaultImageCache = SDImageCachesManager.shared
         
