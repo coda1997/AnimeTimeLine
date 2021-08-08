@@ -8,11 +8,13 @@ PODS:
   - SDWebImage/Core (5.11.1)
   - SDWebImageSwiftUI (2.0.2):
     - SDWebImage (~> 5.10)
+  - Tiercel (3.2.2)
   - ZIPFoundation (0.9.12)
 
 DEPENDENCIES:
   - Bookbinder (~> 1.0.0)
   - SDWebImageSwiftUI
+  - Tiercel
 
 SPEC REPOS:
   trunk:
@@ -20,6 +22,7 @@ SPEC REPOS:
     - Kanna
     - SDWebImage
     - SDWebImageSwiftUI
+    - Tiercel
     - ZIPFoundation
 
 SPEC CHECKSUMS:
@@ -27,8 +30,9 @@ SPEC CHECKSUMS:
   Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
+  Tiercel: 8827f8c2fa90067e377e30666521eef6b3a79232
   ZIPFoundation: e27423c004a5a1410c15933407747374e7c6cb6e
 
-PODFILE CHECKSUM: 82786ee4fab65105effff2c93ea9facb05a2bc9d
+PODFILE CHECKSUM: 8cea79ddadd201cea924aad71e023d01336147da
 
 COCOAPODS: 1.10.2

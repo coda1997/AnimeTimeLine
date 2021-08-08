@@ -14,10 +14,16 @@ struct HomeTab: View {
             ContentView()
                 .tabItem{
                     Label("Anime", systemImage: "rectangle.stack.badge.play.crop")
+                }.tag(1)
+                .onTapGesture {
+                    self.num = 1
                 }
             MangaContentView()
                 .tabItem{
                     Label("Manga", systemImage: "books.vertical")
+                }.tag(2)
+                .onTapGesture {
+                    self.num = 2
                 }
             
         }
