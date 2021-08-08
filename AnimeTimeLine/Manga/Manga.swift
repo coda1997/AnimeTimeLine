@@ -7,20 +7,30 @@
 
 import Foundation
 import SwiftUI
+import OSLog
+import MapKit
 
-
-struct Manga: Identifiable{
-    var id:UUID
+struct Manga :Codable{
     var title:String
-    var imagePath:String
-    var image:Image{
-        do{
-            let data = try Data(contentsOf: URL(fileURLWithPath: imagePath))
-            return Image(uiImage: UIImage.init(data: data)!)
-        }catch{
-            
-        }
-        return Image(imagePath)
-
+    var author:String?
+    var coverPath:String
+//    var image:Image{
+//        do{
+//            let data = try Data(contentsOf: URL(fileURLWithPath: imagePath))
+//            return Image(uiImage: UIImage.init(data: data)!)
+//        }catch{
+//
+//        }
+//        return Image(imagePath)
+//
+//    }
+    var type: String?
+    var dictionaryValue: [String:Any] {
+        [
+            "title": title,
+            "coverPath": coverPath,
+            "type": type ?? "漫画",
+            "author": author ?? "佚名"
+        ]
     }
 }

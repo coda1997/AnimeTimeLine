@@ -8,3 +8,5 @@
 
 "base_url" = "https://bangumi.moe/";
 "current_fetch_url" = "https://bangumi.moe/api/bangumi/current";
+"manga_base_url" =
+    "https://cdn.jsdelivr.net/gh/coda1997/dson@master";

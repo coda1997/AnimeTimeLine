@@ -16,7 +16,6 @@
 		0380DF6B268FE89A00F0A79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF6A268FE89A00F0A79C /* AppDelegate.swift */; };
 		0380DF6D268FEF0100F0A79C /* AnimeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF6C268FEF0100F0A79C /* AnimeDetailView.swift */; };
 		03B9E89826BECD9500445DAB /* MangaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9E89726BECD9500445DAB /* MangaProvider.swift */; };
-		03C3DAD626A6F3E800E11CC6 /* t2.epub in Resources */ = {isa = PBXBuildFile; fileRef = 03C3DAD526A6F3E800E11CC6 /* t2.epub */; };
 		03DFA44726A4691300EB3660 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA44626A4691300EB3660 /* HomeTab.swift */; };
 		03DFA44926A46A2400EB3660 /* MangaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA44826A46A2400EB3660 /* MangaContentView.swift */; };
 		03DFA44D26A46D5600EB3660 /* Manga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA44C26A46D5600EB3660 /* Manga.swift */; };
@@ -27,6 +26,7 @@
 		03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7FA62268F6EED00AC5D5E /* AnimeView.swift */; };
 		0D309CF93439BA29758CA5A5 /* Pods_AnimeTimeLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F86925A11F3F9C1092485F /* Pods_AnimeTimeLine.framework */; };
 		377D90ADA7E8391C05ACCFED /* Pods_AnimeTimeLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6FAF573C107720CDB73201 /* Pods_AnimeTimeLineTests.framework */; };
+		4839CF9E26BF6F7800FE7448 /* MangaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839CF9D26BF6F7800FE7448 /* MangaDetailView.swift */; };
 		48D7B6C7268F04C700497BD3 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48D7B6C6268F04C700497BD3 /* Strings.strings */; };
 		DAA7DC09699ED023BB6C7366 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3502CAE9B66D3FC09576CEC6 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,6 @@
 		0380DF6A268FE89A00F0A79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0380DF6C268FEF0100F0A79C /* AnimeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailView.swift; sourceTree = "<group>"; };
 		03B9E89726BECD9500445DAB /* MangaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaProvider.swift; sourceTree = "<group>"; };
-		03C3DAD526A6F3E800E11CC6 /* t2.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = t2.epub; sourceTree = "<group>"; };
 		03DFA44626A4691300EB3660 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		03DFA44826A46A2400EB3660 /* MangaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaContentView.swift; sourceTree = "<group>"; };
 		03DFA44C26A46D5600EB3660 /* Manga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manga.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		23287521ADE0B770DD7E96E9 /* Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLine-AnimeTimeLineUITests/Pods-AnimeTimeLine-AnimeTimeLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E751293743E4F01A99894AA /* Pods-AnimeTimeLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLine.debug.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine.debug.xcconfig"; sourceTree = "<group>"; };
 		3502CAE9B66D3FC09576CEC6 /* Pods_AnimeTimeLine_AnimeTimeLineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeTimeLine_AnimeTimeLineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4839CF9D26BF6F7800FE7448 /* MangaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDetailView.swift; sourceTree = "<group>"; };
 		48D7B6C6268F04C700497BD3 /* Strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
 		765475703F2B1C403A4674B5 /* Pods-AnimeTimeLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLine.release.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine.release.xcconfig"; sourceTree = "<group>"; };
 		BA4DB758792E74B743CBA002 /* Pods-AnimeTimeLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeTimeLineTests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeTimeLineTests/Pods-AnimeTimeLineTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +137,6 @@
 		03111217268E04A600BB5A58 /* AnimeTimeLine */ = {
 			isa = PBXGroup;
 			children = (
-				03C3DAD526A6F3E800E11CC6 /* t2.epub */,
 				03111218268E04A600BB5A58 /* AnimeTimeLineApp.swift */,
 				0311121C268E04A700BB5A58 /* Assets.xcassets */,
 				0311121E268E04A700BB5A58 /* Preview Content */,
@@ -192,6 +191,7 @@
 				03DFA44C26A46D5600EB3660 /* Manga.swift */,
 				03DFA44E26A46EC100EB3660 /* MangaView.swift */,
 				03B9E89726BECD9500445DAB /* MangaProvider.swift */,
+				4839CF9D26BF6F7800FE7448 /* MangaDetailView.swift */,
 			);
 			path = Manga;
 			sourceTree = "<group>";
@@ -336,7 +336,6 @@
 				03111220268E04A700BB5A58 /* Preview Assets.xcassets in Resources */,
 				0311121D268E04A700BB5A58 /* Assets.xcassets in Resources */,
 				48D7B6C7268F04C700497BD3 /* Strings.strings in Resources */,
-				03C3DAD626A6F3E800E11CC6 /* t2.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +469,7 @@
 				03DFA44D26A46D5600EB3660 /* Manga.swift in Sources */,
 				0311121B268E04A600BB5A58 /* ContentView.swift in Sources */,
 				03E7FA61268F54B000AC5D5E /* AnimeProvider.swift in Sources */,
+				4839CF9E26BF6F7800FE7448 /* MangaDetailView.swift in Sources */,
 				03B9E89826BECD9500445DAB /* MangaProvider.swift in Sources */,
 				03E7FA63268F6EED00AC5D5E /* AnimeView.swift in Sources */,
 				0380DF6B268FE89A00F0A79C /* AppDelegate.swift in Sources */,

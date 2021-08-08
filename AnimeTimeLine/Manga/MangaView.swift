@@ -6,23 +6,29 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct MangaView: View {
-    var manga:Manga
+    var manga:MangaEntity
     let title:String
-    init(manga:Manga){
+    let baseUrl = MangaProvider.shared.urlString
+    var url:String
+    init(manga:MangaEntity){
         self.manga = manga
-        self.title = manga.title
-
+        self.title = manga.title ?? "not found"
+        self.url = "\(baseUrl)/\(manga.coverPath!)".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
     }
     var body: some View {
-
         VStack{
             Spacer()
-            manga.image.resizable()
+            WebImage(url: URL(string: url))
+                .resizable()
                 .scaledToFit()
+                .cornerRadius(8)
             Text(title).lineLimit(1)
         }.frame(height: 250, alignment: .bottom)
+            .shadow(radius: 4)
+
     }
 }
 
@@ -36,7 +42,7 @@ extension Manga{
 
 struct MangaView_Previews: PreviewProvider {
     static var previews: some View {
-        let dommy = Manga(id: UUID(), title: "zhang3", imagePath: "test1")
-        MangaView(manga: MangaProvider.shared.getDemoEpub() ?? dommy)
+        
+        MangaView(manga: MangaEntity())
     }
 }
