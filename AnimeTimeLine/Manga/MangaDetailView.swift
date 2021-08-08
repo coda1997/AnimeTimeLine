@@ -20,9 +20,24 @@ struct MangaDetailView: View {
     }
     
     var body: some View {
-        WebImage(url: URL(string: coverPath))
-            .resizable()
-            .scaledToFit()
+        List{
+            Section("Cover"){
+                WebImage(url: URL(string: coverPath))
+                            .resizable()
+                            .scaledToFit()
+            }
+            Section("Title"){
+                Text(manga.title ?? "not found")
+            }
+            Section("Author"){
+                Text(manga.author ?? "not found")
+            }
+            Section("Type"){
+                Text(manga.type ?? "漫画")
+            }
+        }
+        
+        
     }
 }
 

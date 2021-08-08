@@ -14,7 +14,7 @@ struct AnimeDetailView: View {
     var body: some View {
         List{
             Section("Cover"){
-                AnimatedImage(url: URL(string: baseUrlString+anime.cover!))
+                WebImage(url: URL(string: baseUrlString+anime.cover!))
                     .resizable()
                     .scaledToFit()
             }
