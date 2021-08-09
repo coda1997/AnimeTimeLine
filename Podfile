@@ -6,7 +6,7 @@ target 'AnimeTimeLine' do
   use_frameworks!
   pod 'Bookbinder', '~> 1.0.0'
   pod 'SDWebImageSwiftUI'
-  pod 'Tiercel'
+  pod 'Alamofire', '~> 5.4'
 
   # Pods for AnimeTimeLine
 

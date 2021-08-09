@@ -10,20 +10,30 @@ import Bookbinder
 import SDWebImageSwiftUI
 
 struct MangaFileContentView: View {
-    var title:String
-    init(title:String){
-        self.title = title
+    var urlString:String
+    init(urlString:String){
+        self.urlString = urlString
     }
+    @State var isReady = false
     var body: some View {
-        WebImage(url: URL(string: title))
-            .resizable()
-            .scaledToFit()
+        ZStack{
+            WebImage(url: URL(string: urlString))
+                .resizable()
+                .scaledToFit()
+                .blur(radius: isReady ? 0 : 10)
+            if !isReady {
+                ProgressView().progressViewStyle(.circular)
+            }
+        }.onTapGesture {
+            isReady.toggle()
+        }
+        
             
     }
 }
 
 struct MangaFileContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MangaFileContentView(title: "")
+        MangaFileContentView(urlString: "")
     }
 }

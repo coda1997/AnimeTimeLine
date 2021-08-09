@@ -14,7 +14,6 @@
 		0311122A268E04A800BB5A58 /* AnimeTimeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111229268E04A800BB5A58 /* AnimeTimeLineTests.swift */; };
 		03111234268E04A800BB5A58 /* AnimeTimeLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */; };
 		034E74F226BFFB1A00CCE4AF /* EpubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E74F126BFFB1A00CCE4AF /* EpubView.swift */; };
-		034E74F426BFFC3A00CCE4AF /* MangaFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E74F326BFFC3A00CCE4AF /* MangaFileManager.swift */; };
 		034E74F626C0112E00CCE4AF /* MangaFileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E74F526C0112E00CCE4AF /* MangaFileContentView.swift */; };
 		034E74F826C0156C00CCE4AF /* EpubBookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E74F726C0156C00CCE4AF /* EpubBookManager.swift */; };
 		0380DF6B268FE89A00F0A79C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380DF6A268FE89A00F0A79C /* AppDelegate.swift */; };
@@ -63,7 +62,6 @@
 		0311122F268E04A800BB5A58 /* AnimeTimeLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeTimeLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03111233268E04A800BB5A58 /* AnimeTimeLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTimeLineUITests.swift; sourceTree = "<group>"; };
 		034E74F126BFFB1A00CCE4AF /* EpubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpubView.swift; sourceTree = "<group>"; };
-		034E74F326BFFC3A00CCE4AF /* MangaFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaFileManager.swift; sourceTree = "<group>"; };
 		034E74F526C0112E00CCE4AF /* MangaFileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaFileContentView.swift; sourceTree = "<group>"; };
 		034E74F726C0156C00CCE4AF /* EpubBookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpubBookManager.swift; sourceTree = "<group>"; };
 		0380DF6A268FE89A00F0A79C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 				03B9E89726BECD9500445DAB /* MangaProvider.swift */,
 				4839CF9D26BF6F7800FE7448 /* MangaDetailView.swift */,
 				034E74F126BFFB1A00CCE4AF /* EpubView.swift */,
-				034E74F326BFFC3A00CCE4AF /* MangaFileManager.swift */,
 				034E74F526C0112E00CCE4AF /* MangaFileContentView.swift */,
 				034E74F726C0156C00CCE4AF /* EpubBookManager.swift */,
 			);
@@ -475,7 +472,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				034E74F426BFFC3A00CCE4AF /* MangaFileManager.swift in Sources */,
 				0380DF6D268FEF0100F0A79C /* AnimeDetailView.swift in Sources */,
 				03DFA44926A46A2400EB3660 /* MangaContentView.swift in Sources */,
 				034E74F626C0112E00CCE4AF /* MangaFileContentView.swift in Sources */,

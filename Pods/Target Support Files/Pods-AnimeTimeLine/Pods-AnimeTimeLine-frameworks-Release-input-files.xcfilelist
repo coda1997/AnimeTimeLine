@@ -1,7 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-AnimeTimeLine/Pods-AnimeTimeLine-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Bookbinder/Bookbinder.framework
 ${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
-${BUILT_PRODUCTS_DIR}/Tiercel/Tiercel.framework
 ${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework

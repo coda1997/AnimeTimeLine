@@ -21,6 +21,7 @@ struct MangaContentView: View {
                         
                         NavigationLink(destination: {
                             MangaDetailView(manga: item)
+                                .navigationBarTitle(item.title ?? "")
                         }, label: {
                             MangaView(manga: item)
                         }).buttonStyle(.plain)

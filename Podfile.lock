@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.4.3)
   - Bookbinder (1.0.3):
     - Kanna (~> 5.0.0)
     - ZIPFoundation (~> 0.9)
@@ -8,31 +9,30 @@ PODS:
   - SDWebImage/Core (5.11.1)
   - SDWebImageSwiftUI (2.0.2):
     - SDWebImage (~> 5.10)
-  - Tiercel (3.2.2)
   - ZIPFoundation (0.9.12)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.4)
   - Bookbinder (~> 1.0.0)
   - SDWebImageSwiftUI
-  - Tiercel
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Bookbinder
     - Kanna
     - SDWebImage
     - SDWebImageSwiftUI
-    - Tiercel
     - ZIPFoundation
 
 SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Bookbinder: 00fe5ffac9a8d2de97ba2c29267200ac806e4151
   Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
-  Tiercel: 8827f8c2fa90067e377e30666521eef6b3a79232
   ZIPFoundation: e27423c004a5a1410c15933407747374e7c6cb6e
 
-PODFILE CHECKSUM: 8cea79ddadd201cea924aad71e023d01336147da
+PODFILE CHECKSUM: 60f8d285e408790714d8e594e74d3bdac7f2dc1e
 
 COCOAPODS: 1.10.2
