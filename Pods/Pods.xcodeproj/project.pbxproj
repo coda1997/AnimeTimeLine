@@ -225,8 +225,8 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
-			remoteInfo = SDWebImage;
+			remoteGlobalIDString = 92EBFA3E7005B4C18A9C0B44324EB80F;
+			remoteInfo = SDWebImageSwiftUI;
 		};
 		3E89A5D7A5446DFDE95303A34F36B0AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -246,8 +246,8 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93AC747EDE1EE56F89BBF405C1D67027;
-			remoteInfo = Kanna;
+			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
+			remoteInfo = SDWebImage;
 		};
 		8D6DAC05A76475C99499BBEDF5DD8AAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -260,8 +260,8 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA15C8469D67684160CC2A7098EB841C;
-			remoteInfo = ZIPFoundation;
+			remoteGlobalIDString = 92EBFA3E7005B4C18A9C0B44324EB80F;
+			remoteInfo = SDWebImageSwiftUI;
 		};
 		DAFA46F08E7CFD8D2390603386F5ADAB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -276,20 +276,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
-		};
-		F3258D5609408800C6F900685FEA0F03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F40CBF2CF002BDDD8402C6603A79AF0D;
-			remoteInfo = "Pods-AnimeTimeLine";
-		};
-		FFB5BEE5F382278E11F40B0CB335DE74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A723444E0375551B6F588991D14C19E0;
-			remoteInfo = Bookbinder;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -553,19 +539,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		946FAEC3D2599ACFBA23835514950AA1 /* Frameworks */ = {
+		3A4D727C36397BC42E9FD8331563BBBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF30A82098A157801BFFD62515286205 /* Foundation.framework in Frameworks */,
+				5408BE7DEC61C1A3AA80CED53B7BD1F5 /* Foundation.framework in Frameworks */,
+				5CA2AC72A71CEF79A07FAAA283BE8A52 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C30014194CB3153399F5FE70B1C24FF /* Frameworks */ = {
+		3CFC71791DB2D0E5D5F6C99D93490AD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2DF1B4A33D06028565AC635BC5C5CB /* Foundation.framework in Frameworks */,
+				F8DF6E95C5156A7E7B9B2982E14E19B2 /* Foundation.framework in Frameworks */,
+				69F53C1EC1FBDDDAFA28B48DE97FC742 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,43 +650,7 @@
 				DE7E9772551A06C0061352222DFFD50D /* Core */,
 				B8C3BD46310627E14493BCFDBA12950A /* Support Files */,
 			);
-			name = SDWebImageSwiftUI;
-			path = SDWebImageSwiftUI;
-			sourceTree = "<group>";
-		};
-		4740A760659BB08C1052B3FFDE450227 /* Bookbinder */ = {
-			isa = PBXGroup;
-			children = (
-				216195732090B9FC76A3DF461DCE97E2 /* Bookbinder.h */,
-				F3A37DB541D37E321F577077B4429EDE /* Bookbinder.swift */,
-				EF42ADBBAEE13D4516BE7368DDCF7C49 /* BookbinderConfiguration.swift */,
-				FB58A2B8DBCC36673E0749370F35ECBD /* ContainerDocument.swift */,
-				814B6E23A8478D58E5581A68FBC8C4AA /* EPUBBook.swift */,
-				36201298F968E121CFBD9EE10895F7B4 /* NCXDocument.swift */,
-				820EA5A599F19FADF121D0B56A88B067 /* OPFDocument.swift */,
-				F0A098F2CA2B4F88D926CE8BE630522C /* OPFManifest.swift */,
-				D2419D0D93D7B568D4C4559A90E76A75 /* OPFMetadata.swift */,
-				DDFE082CC10942C18E1E9D01AD997FBF /* OPFSpine.swift */,
-				76EAD918033366E25F30B0CC56D4A1C6 /* XParser.swift */,
-				41CB0EC6E0458C3DC63A02DA371A926B /* Support Files */,
-			);
-			name = Bookbinder;
-			path = Bookbinder;
-			sourceTree = "<group>";
-		};
-		57D2B9858C9C99416C85B22C2C3E28D4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5A8ADA29188E2DA1E9DDF84905E29893 /* Kanna.modulemap */,
-				14977834D935B37A149B867ECF31D3B8 /* Kanna-dummy.m */,
-				479E3E33630AE8C59A5BF0AA397A215A /* Kanna-Info.plist */,
-				13F6A13FE657281A95DE0AF107D63EEC /* Kanna-prefix.pch */,
-				D409B4DFC60DF97F221DFCB9A4CBF61D /* Kanna-umbrella.h */,
-				41DB6C2F6D26BFBB4193BA1B40F2990F /* Kanna.debug.xcconfig */,
-				FEED7CA2570F2B62F2F239F29140128B /* Kanna.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Kanna";
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 		62DEAB28A59C90F3AC1BFCEA9D728D28 /* Pods-AnimeTimeLine */ = {
@@ -1236,24 +1188,6 @@
 			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF6413888FBA82A60EBB6F0A0EA14AD8 /* Tiercel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E6BC7DB41B21E1E39B2E6B24B01AD2D /* Build configuration list for PBXNativeTarget "Tiercel" */;
-			buildPhases = (
-				F660B566D11961B315179C728F0F88A9 /* Headers */,
-				927B559F088D3C1C092A4996575D2C1C /* Sources */,
-				D7FA3682925D43999F8F104EC3777B6C /* Frameworks */,
-				5A9B0CEB87502E643D018025036CCFDC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Tiercel;
-			productName = Tiercel;
-			productReference = DBD68AAF67BB25B9E1F44519178DAE0F /* Tiercel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		F40CBF2CF002BDDD8402C6603A79AF0D /* Pods-AnimeTimeLine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EB609172EBB558130DDB02DF5780151 /* Build configuration list for PBXNativeTarget "Pods-AnimeTimeLine" */;
@@ -1513,31 +1447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4C53E2DCAB1E1DC8711027A5F2A03A /* Array+Safe.swift in Sources */,
-				7A676D81C463EBEDE9731D4AFF39D304 /* Cache.swift in Sources */,
-				8D14BDE58A7CAD8ED7C07ABF2411A4FE /* CodingUserInfoKey+Cache.swift in Sources */,
-				53FD8E9A81BFBBC7B1225F66EDF6F102 /* Common.swift in Sources */,
-				F941DDB76F8C69351C7F53C15B5CD5DE /* Data+Hash.swift in Sources */,
-				E2707820C537696C8C8431D14348D1F0 /* DispatchQueue+Safe.swift in Sources */,
-				5BFB699B46E8C2AA54808F4DCE587FE1 /* Double+TaskInfo.swift in Sources */,
-				A76B9768581A3567943D06C21BDAEC86 /* DownloadTask.swift in Sources */,
-				8FF2F3C4E450BF49D862D0A59A396E39 /* Executer.swift in Sources */,
-				824CB426DB23FDE39E991A88B4C75B80 /* FileChecksumHelper.swift in Sources */,
-				A95240F4531E02140228372C00CC0FF7 /* Int64+TaskInfo.swift in Sources */,
-				47D13357249FEC99F18F839075083A6A /* Notifications.swift in Sources */,
-				358C139E5C5EFED43F8F1370285518FA /* OperationQueue+DispatchQueue.swift in Sources */,
-				15D21793F8C3CAAA1CCE7A9F98C3E5AD /* Protector.swift in Sources */,
-				20B95B53D7C2E3671A39C0C9795FB9D1 /* ResumeDataHelper.swift in Sources */,
-				C1E6010BFE5AC182109D069DB0DDD87F /* SessionConfiguration.swift in Sources */,
-				64F267C7E15BEAB29FFC1C08189C691E /* SessionDelegate.swift in Sources */,
-				4B021B14FDBE308181533136FC080BE6 /* SessionManager.swift in Sources */,
-				C6D93C95DB253B8ECB4CF0678AEC50B6 /* String+Hash.swift in Sources */,
-				2C5F5C33ED615BD9DCB3744440E510AB /* Task.swift in Sources */,
-				14D387B05D14E96F814BE38D3E740553 /* Tiercel-dummy.m in Sources */,
-				29C974B7DCD4233730458BA1B6DBCC56 /* TiercelError.swift in Sources */,
-				D5D2CD0E5DFD77D72AEB430FC5282F36 /* UIDevice+Free.swift in Sources */,
-				590D193B1132DA706BB4C01167AB402B /* URLConvertible.swift in Sources */,
-				F0C0100F8119C8A54C26F741611A6FE9 /* URLSession+ResumeData.swift in Sources */,
+				803A062113A000C5E629E7CD5E3128A6 /* Pods-AnimeTimeLineTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1717,7 +1627,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1900,7 +1810,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2207,20 +2117,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D43D7A080BA92784E76BD6B1CA82E6C8 /* Build configuration list for PBXNativeTarget "Pods-AnimeTimeLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34D89EA438D839F98AA707329EE26A78 /* Debug */,
+				D1E6C46374F5E898E622160CE9A1CC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F7647E2BDF8B9DF44AD8E949386796A7 /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C1FA3DCB3921756431DC3015678555C /* Debug */,
 				0E213C54A9A495F3BD2A7B67BD02A44E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEC66C8A79EFD58FB2D515116E903D51 /* Build configuration list for PBXNativeTarget "Pods-AnimeTimeLine" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E736CA812058F419A6C87166C9852418 /* Debug */,
-				01B30EEE3FDF776EF13BC29ABD877B41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

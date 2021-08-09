@@ -9,7 +9,6 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - SDWebImageSwiftUI
-  - Tiercel
 
 SPEC REPOS:
   trunk:
