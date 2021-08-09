@@ -27,32 +27,33 @@ struct MangaDetailView: View {
     var body: some View {
         List{
             Section("Cover"){
-                VStack{
-                    WebImage(url: URL(string: coverPath))
-                        .resizable()
-                        .scaledToFit()
-                        .onTapGesture {
-//                            if !isTapped {
-//                                MangaFileManager.shared.download(path: mangaFilePath, uiCallBack: { p, name in
-//                                    progress = p
-//                                    title = name
-//                                })
-                            
-//                            }
-                            isTapped = true
-                        }.sheet(isPresented: $isTapped, onDismiss: {
-                            isTapped = false
-                        }, content: {
-                            WebImage(url: URL(string: coverPath))
-                                .resizable()
-                                .scaledToFit()
-                                
-                        })
-                        
-//                    if isTapped {
-//                        EpubView(progressValue: $progress, startReading: $read)
-//                    }
-                }
+                
+                
+                Button(action: {
+                    isTapped = true
+                }, label: {
+                    VStack{
+                        WebImage(url: URL(string: coverPath))
+                            .resizable()
+                            .scaledToFit()
+
+                    }
+                })
+                .buttonStyle(.borderless)
+                .fullScreenCover(isPresented: $isTapped, onDismiss: {
+                    isTapped = false
+                }, content: {
+                    NavigationView{
+                        MangaFileContentView(urlString: coverPath)
+                            .navigationBarItems(leading:
+                                Button(action: {
+                                    isTapped = false
+                                }, label: {
+                                    Text("Done")
+                                })
+                            )
+                    }
+                })
             }
             Section("Title"){
                 Text(manga.title ?? "not found")

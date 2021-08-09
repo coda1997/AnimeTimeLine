@@ -5,7 +5,6 @@
 //  Created by 沈达 on 2021/8/7.
 //
 
-import Bookbinder
 import SwiftUI
 import OSLog
 import CoreData
@@ -15,35 +14,10 @@ class MangaProvider{
         print("manga provider init start")
     }
     private let logger = Logger(subsystem: "cn.dadachen.AnimeTimeLine", category: "epub")
-    private lazy var bookBinder: Bookbinder = Bookbinder()
     public static let shared = MangaProvider()
     
     let urlString = Bundle.main.localizedString(forKey: "manga_base_url", value: nil, table: "Strings")
     
-//    public func getDemoEpub() -> Manga?{
-//        guard let path = Bundle.main.url(forResource: "t2", withExtension: "epub") else {
-//            print("[epub] not found")
-//            return nil
-//            
-//        }
-//        guard let ebook = bookBinder.bindBook(at: path) else {
-//            return nil
-//        }
-//        self.ebook = ebook
-//        let epub = paserEpubFileToManga(ebook: ebook)
-//        
-//        return epub
-//        
-//    }
-//    public func getCoverPath()-> URL?{
-//        return ebook?.coverImageURLs[0] ?? nil
-//    }
-//    private var ebook:EPUBBook? = nil
-//    private func paserEpubFileToManga(ebook:EPUBBook)->Manga{
-//        let imagePath = ebook.coverImageURLs[0]
-//        let title = ebook.opf.metadata.titles[0]
-//        return Manga
-//    }
     
     lazy var container: NSPersistentContainer = AnimeProvider.shared.container
     
