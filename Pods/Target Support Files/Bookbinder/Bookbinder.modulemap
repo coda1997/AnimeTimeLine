@@ -1,6 +1,0 @@
-framework module Bookbinder {
-  umbrella header "Bookbinder-umbrella.h"
-
-  export *
-  module * { export * }
-}
